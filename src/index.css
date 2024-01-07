@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply overflow-hidden;
+}
+
+@layer components {
+    .shadow-tile {
+        @apply shadow-lg;
+        @apply shadow-neutral-200;
+    }
+
+    .bg-glass {
+        @apply bg-secondary/50;
+        /* background: rgba(255, 255, 255, 0.35); */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+}
